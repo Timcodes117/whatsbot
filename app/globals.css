@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero_blur{
+  position: absolute;
+  width: 333px;
+  height: 270px;
+  border-radius: 100%;
+  background: rgba(0, 170, 255, 0.1);
+  filter: blur(40px);
+}
+
+.hero_blur2{
+  position: absolute;
+  width: 333px;
+  height: 270px;
+  border-radius: 100%;
+  background: rgba(0, 255, 0, 0.15);
+  filter: blur(40px);
+}
+
+/* Rectangle 1 */
+
+.hero_action_btn{
+width: 250px;
+height: 60px;
+background: #00FF4D;
+filter: blur(4px);
+border-radius: 20px;
+}
