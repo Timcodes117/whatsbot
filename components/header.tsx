@@ -15,7 +15,9 @@ const MainHeader = () => {
         </nav>
 
         <div>
-            <button className='w-[40px] bg-white invert-0 h-[40px] rounded-full'></button>
+            <button className='w-fit bg-black invert-75 px-4  h-[35px] rounded-full'>
+              <p className='text-white text-sm'>Get started</p>
+            </button>
         </div>
     </header>
   )
